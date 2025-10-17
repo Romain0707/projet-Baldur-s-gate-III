@@ -145,10 +145,11 @@ nav a {
 
 #honorifique {
     display: flex;
-    margin: 10% auto;
+    width: 100%;
+    max-width: 1080px;
+    margin: 5rem auto;
     padding: 1rem 2rem;
     gap: 1rem;
-    max-width: 75%;
     justify-content: space-around;
     align-items: center;
     background-image: url(../img/awards-bg.png);
@@ -171,7 +172,10 @@ nav a {
 /* SECTION RACE */
 
 #races {
-    padding-inline: 10%;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .container__main {
@@ -283,7 +287,10 @@ nav a {
 /* SECTION NEWS */
 
 #news {
-    padding-inline: 10%;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
     margin-bottom: 2rem;
 }
 
@@ -327,7 +334,10 @@ nav a {
 /* SECTION FAN-ART */
 
 #fanart {
-    padding-inline: 10%;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
     text-align: right;
 }
 
