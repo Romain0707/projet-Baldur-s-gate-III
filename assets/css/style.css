@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "Gothic Regular";
+    src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gothic Light";
+    src: url(../fonts/Gothic_A1/GothicA1-Light.ttf);
+}
+
+@font-face {
+    font-family: "Medieval Regular";
+    src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+h2 {
+    color: #FBCEA0;
+}
+
+body {
+    font-family: "Medieval Regular", sans-serif;
+    background-image: url(../img/smoke-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* NAV BAR */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 10%;
+    z-index: 999;
+}
+
+.nav__image {
+    max-width: 150px;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+nav a {
+    font-size: 0.8rem;
+    color: #FBCEA0;
+}
+
+/* UTILITIES */
+
+.btn {
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+}
+
+.btn.btn--nav {
+    background-color: #FBCEA0;
+    color: black;
+}
+
+.btn.btn-transparant {
+    background-color: rgba(0, 0, 0, 0.571);
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.border {
+    border: 2px solid #C09875;
+    border-radius: 4px;
+}
+
+.flou::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: blur(4px);
+    z-index: -1;
+}
+
+/* VIDEO */
+
+.video {
+    position: relative;
+}
+
+.party {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.party p {
+    font-size: 1.5rem;
+    color: #FBCEA0;
+}
+
+
+/* SECTION HONORIFIQUE */
+
+#honorifique {
+    display: flex;
+    margin: 10% auto;
+    padding: 0.5rem 3rem 0.5rem 2rem;
+    max-width: 75%;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/awards-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.honorifique-image {
+    display: flex;
+}
+
+.honorifique__text h1 {
+    font-family: "Gothic Light", sans-serif;
+    font-size: 0.8rem;
+}
+
+/* SECTION RACE */
+
+#races {
+    padding-inline: 10%;
+}
+
+.container__main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.container__races {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem;
+    max-width: 50%;
+    background-image: url(../img/races-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.races__image {
+    width: 60px;
+}
+
+.container__races-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 0.5rem 1rem;
+}
+
+/* banner */
+
+#banner {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/buy-now-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-inline: 10%;
+}
+
+.banner__description { 
+    font-family: "Gothic Light";
+    font-size: 0.7rem;
+    opacity: 70%;
+    margin-bottom: 1rem;
+}
+
+.banner__content {
+    padding-block: 1rem;
+}
+
+.banner__btn {
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 25px;
+    gap: 0.3rem;
+}
+
+.banner__btn a {
+    display: block;
+}
+
+/* SECTION NEWS */
+
+#news {
+    padding-inline: 10%;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    min-height: 120px;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%
+}
+
+.card p {
+    font-family: "Gothic Regular", sans-serif;
+}
+
+.card a {
+    font-family: "Medieval Regular", sans-serif;
+    color: #C09875;
+}
+
+.news-1 {
+    background-image: url(../img/news-1.jpg);
+}
+
+.news-2 {
+    background-image: url(../img/news-2.jpg);
+}
+
+.news-3 {
+    background-image: url(../img/news-3.jpg);
+}
+
+/* SECTION FAN-ART */
+
+#fanart {
+    padding-inline: 10%;
+    text-align: right;
+}
+
+.fanart__container {
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.fanart__card {
+    height: 300px;
+    min-width: 150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.fanart__card-1 {
+    background-image: url(../img/gallery-1.jpeg);
+}
+
+.fanart__card-2 {
+    background-image: url(../img/gallery-2.webp);
+}
+
+.fanart__card-3 {
+    background-image: url(../img/gallery-3.webp);
+}
+
+.fanart__card-4 {
+    background-image: url(../img/gallery-4.jpeg);
+}
+
+.fanart__card-5 {
+    background-image: url(../img/gallery-5.jpeg);
+}
+
+.fanart__card-6 {
+    background-image: url(../img/gallery-6.png);
+}
+
+.fanart__card-7 {
+    background-image: url(../img/gallery-7.webp);
+}
+
+.fanart__card-8 {
+    background-image: url(../img/gallery-8.jpeg);
+}
+
+/* SECTION DIGITAL */
+
+#digital {
+    padding: 10% 15%;
+}
+
+.digital__container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: space-between;
+    background-image: url(../img/cta-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+.digital__container p {
+    font-family: "Gothic Regular";
+}
+
+.digital__container a {
+    color: white;
+    border-radius: 12px;
+    padding: 0.5rem;
+}
+
+/* FOOTER */
+
+.container--footer {
+    margin-inline: 10%;
+    padding-block: 2rem;
+    border-bottom: 1px solid #D2A680;
+    border-top: 1px solid #D2A680;
+}
+
+
