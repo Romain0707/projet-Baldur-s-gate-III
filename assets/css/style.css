@@ -113,6 +113,11 @@ nav a {
     z-index: -1;
 }
 
+.container {
+    width: 20%;
+}
+
+
 /* VIDEO */
 
 .video {
@@ -141,24 +146,29 @@ nav a {
 #honorifique {
     display: flex;
     margin: 10% auto;
-    padding: 0.5rem 3rem 0.5rem 2rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
     max-width: 75%;
-    gap: 0.5rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-image: url(../img/awards-bg.png);
     background-position: center;
     background-size: cover;
 }
 
-.honorifique-image {
-    display: flex;
+.honorifique__text h1, {
+    display: inline-block;
+    font-family: "Gothic Light", sans-serif;
+    width: 100%;
 }
 
-.honorifique__text h1 {
-    font-family: "Gothic Light", sans-serif;
-    font-size: 0.8rem;
+.honorifique__text h2 {
+    display: inline-block;
+    font-size: xx-large;
+    width: 100%;
 }
+
+
 
 /* SECTION RACE */
 
@@ -188,7 +198,6 @@ nav a {
 }
 
 .races__image {
-    width: 60px;
     text-align: center;
 }
 
@@ -203,8 +212,13 @@ nav a {
 }
 
 .container__races-info h4 {
-    position: relative;
-    width: 150px;
+    font-size: xx-large;
+    color: #D2A680;
+}
+
+.container__races-info p {
+    font-family: "Gothic Regular", sans-serif;
+    color: #D2A680;
 }
 
 .line {
@@ -229,7 +243,6 @@ nav a {
     width: 95%;
     height: 1px;
     background-color: #CEA37D;
-    margin-bottom: 40%;
 }
 
 /* banner */
