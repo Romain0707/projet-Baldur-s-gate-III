@@ -58,6 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 
 video {
     height: 100vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 ul {
@@ -618,7 +620,7 @@ nav a {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
     } 
-     
+
     .container__races-info {
         max-width: 90%;
     }
