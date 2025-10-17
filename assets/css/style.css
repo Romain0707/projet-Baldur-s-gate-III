@@ -189,6 +189,7 @@ nav a {
 
 .races__image {
     width: 60px;
+    text-align: center;
 }
 
 .container__races-info {
@@ -198,6 +199,7 @@ nav a {
     gap: 2rem;
     max-width: 50%;
     padding: 0.5rem 1rem;
+    text-align: center;
 }
 
 .container__races-info h4 {
@@ -205,15 +207,30 @@ nav a {
     width: 150px;
 }
 
-.container__races-info h4::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid #CEA37D;
+.line {
+    position: relative;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(to right,#DECAAF, #CEA37D);
 }
 
+.line::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: -8px;
+    bottom: 0.5px;
+    transform: translate(0%, 50%);
+    background-image: url(../svg/decoration-line--before.svg);
+}
 
+.big-line {
+    width: 95%;
+    height: 1px;
+    background-color: #CEA37D;
+    margin-bottom: 40%;
+}
 
 /* banner */
 
