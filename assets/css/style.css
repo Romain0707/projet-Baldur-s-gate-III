@@ -194,9 +194,26 @@ nav a {
 .container__races-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     max-width: 50%;
     padding: 0.5rem 1rem;
 }
+
+.container__races-info h4 {
+    position: relative;
+    width: 150px;
+}
+
+.container__races-info h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #CEA37D;
+}
+
+
 
 /* banner */
 
@@ -366,10 +383,55 @@ nav a {
 /* FOOTER */
 
 .container--footer {
+    display: flex;
+    gap: 3rem;
     margin-inline: 10%;
     padding-block: 2rem;
     border-bottom: 1px solid #D2A680;
     border-top: 1px solid #D2A680;
 }
 
+.container--footer a {
+    font-family: "Gothic Regular", sans-serif;
+    color: #CEA37D;
+}
 
+.container--footer h3 {
+    color: #FBCEA0;
+    font-size: x-large;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.social-media p {
+    font-family: "Gothic Regular", sans-serif;
+}
+
+.container--footer li {
+    margin-bottom: 0.5rem;
+}
+
+.container--footer li:first-child {
+    margin-top: 0.5rem;
+}
+
+.terms {
+    margin-inline: 10%;
+}
+
+.terms ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.terms a {
+    color: white;
+    font-family: "Gothic Regular", sans-serif;
+}
