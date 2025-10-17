@@ -119,13 +119,48 @@ nav a {
     color: var(--clr-400);
 }
 
+.burger {
+    margin-top: 1.5rem;
+    position: relative;
+    display: none;
+    width: 1.7rem;
+    height: 0.250rem;
+    background-color: var(--clr-400);
+    border-radius: 0.125rem;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+.burger::before, .burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.7rem;
+    height: 0.250rem;
+    background-color: var(--clr-400);
+    border-radius: 0.125rem;
+}
+
+.burger::before {
+    top:-8px;
+}
+.burger::after {
+    top: 8px;
+}
+
+
 /* UTILITIES */
 
 .btn {
     position: relative;
     padding: 0.7rem 1rem;
     border-radius: var(--radius-400);
-    background-color: rgba(0, 0, 0, 0.571);
+    background-color: rgba(0, 0, 0, 0.500);
+    transition:
+        background-color 1s,
+        color 1s;
 }
 
 .btn::after {
@@ -139,6 +174,12 @@ nav a {
 .btn.btn--nav {
     background-color: var(--clr-400);
     color: black;
+}
+
+.btn:hover {
+    background-color: var(--clr-400);
+    color: black;
+    cursor: pointer;
 }
 
 .btn.btn--banner {
@@ -235,8 +276,25 @@ nav a {
 }
 
 .races__image {
+    position: relative;
     text-align: center;
     width: 20%;
+    height: 20%;
+}
+
+.races__image img {
+    width: 80%;
+}
+
+.races__image:hover::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    left: -10px;
+    bottom: 0;
+    cursor: pointer;
+    border: 1px solid var(--clr-700);
 }
 
 .container__races-info {
@@ -327,8 +385,10 @@ nav a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 40%
+    width: 40%;
+    min-width: 250px;
 }
+
 .card::after {
     content: "";
     background-color: rgba(0, 0, 0, 0.423);
@@ -378,6 +438,12 @@ nav a {
     background-position: center;
     background-size: cover;
     border-radius: 12px;
+    transition: border 1s ease-out,filter 1s ease-out;
+}
+
+.fanart__card:hover {
+    filter: brightness(1.2);
+    border: 1px solid var(--clr-700);
 }
 
 .fanart__card-1 {
@@ -492,4 +558,55 @@ nav a {
 
 .terms a {
     font-family: var(--ff-Gothic-Regular);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .burger {
+        display: inline-block;
+    }
+
+    .container__main {
+        flex-direction: column;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    #banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner__content  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner__content ul {
+        justify-content: center;
+    }
+
+    .container--footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .terms ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
