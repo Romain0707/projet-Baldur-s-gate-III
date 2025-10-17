@@ -156,7 +156,7 @@ nav a {
     background-size: cover;
 }
 
-.honorifique__text h1, {
+.honorifique__text h1 {
     display: inline-block;
     font-family: "Gothic Light", sans-serif;
     width: 100%;
@@ -167,8 +167,6 @@ nav a {
     font-size: xx-large;
     width: 100%;
 }
-
-
 
 /* SECTION RACE */
 
