@@ -284,17 +284,20 @@ nav a {
     height: 90px;
 }
 
+.races__image-info {
+    width: 90px;
+    height: 90px;
+}
+
+
 .races__image img {
-    width: 80%;
+    width: 100%;
 }
 
 .races__image:hover::after {
     content: "";
     position: absolute;
-    top: -10px;
-    right: -10px;
-    left: -10px;
-    bottom: 0;
+    inset: -25px;
     cursor: pointer;
     border: 1px solid var(--clr-700);
 }
@@ -322,7 +325,7 @@ nav a {
 .line {
     position: relative;
     width: 40%;
-    height: 2px;
+    height: 1px;
     background: linear-gradient(to right,#DECAAF, var(--clr-700));
 }
 
