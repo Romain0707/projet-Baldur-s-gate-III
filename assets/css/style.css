@@ -236,21 +236,21 @@ nav a {
 
 #honorifique {
     display: flex;
-    flex-wrap: wrap;
     margin: 5rem auto;
     padding: 1rem 2rem;
-    gap: 1rem;
-    justify-content: space-around;
-    align-items: center;
     background: center/cover url(../img/awards-bg.png);
 }
 
+.honorifique__container-image {
+    display: flex;
+}
+
 .honorifique__text {
-    max-width: 200px;
+    flex-basis: 60%;
 }
 
 .honorifique__image {
-    max-width: 175px;
+    flex-basis: 100%;
 }
 
 .honorifique__text h2 {
@@ -626,5 +626,9 @@ nav a {
 
     .container__races-info {
         max-width: 90%;
+    }
+
+    #honorifique {
+        flex-direction: column;
     }
 }
