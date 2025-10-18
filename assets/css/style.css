@@ -234,7 +234,7 @@ nav a {
 
 /* SECTION HONORIFIQUE */
 
-#honorifique {
+.honorifique {
     display: flex;
     margin: 5rem auto;
     padding: 1rem 2rem;
@@ -628,7 +628,7 @@ nav a {
         max-width: 90%;
     }
 
-    #honorifique {
+    .honorifique {
         flex-direction: column;
     }
 }
