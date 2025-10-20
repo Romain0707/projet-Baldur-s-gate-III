@@ -121,6 +121,10 @@ nav a {
     color: var(--clr-400);
 }
 
+.menu-burger {
+    display: none;
+}
+
 .burger {
     margin-top: 1.5rem;
     position: relative;
@@ -356,9 +360,15 @@ nav a {
     background: center/cover no-repeat url(../img/buy-now-background.jpg);
 }
 
+.banner-container {
+    display: flex;
+    padding-block: 2rem;
+    align-items: center;
+}
+
 .banner__description { 
     font-family: var(--ff-Gothic-Light);
-    font-size: 0.7rem;
+    font-size: var(--fs-100);
     opacity: 70%;
     margin-bottom: 1rem;
 }
@@ -570,6 +580,14 @@ nav a {
         display: none;
     }
 
+    .menu-burger {
+        position: absolute;
+        right: 80px;
+        padding-bottom: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
     .burger {
         display: inline-block;
     }
@@ -594,7 +612,13 @@ nav a {
         justify-content: center;
     }
 
+    .banner-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
     .banner__content  {
+        padding-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -618,6 +642,8 @@ nav a {
 
     .container__races {
         flex-wrap: nowrap;
+        justify-content: start;
+        gap: 3rem;
         max-width: 100%;
         max-height: 250px;
         overflow-x: auto;
